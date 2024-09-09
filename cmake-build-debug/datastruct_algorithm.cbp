@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="datastruct_algorithm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="datastruct_algorithm">
+				<Option output="/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/datastruct_algorithm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 datastruct_algorithm"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="datastruct_algorithm/fast">
+				<Option output="/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/datastruct_algorithm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 datastruct_algorithm/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kai.chen/CLionProjects/datastruct_algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/array_2d.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/array_2f_search.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/array_duplicate.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/array_rotate.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/array_string_op.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/backtrack.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/backtrak_2dm.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/bfs_dfs.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/binary_tree_inorder_traversal.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/binary_tree_normal_op.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/binary_tree_serialize.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/bit_op.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/calculater.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/dp_1d.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/dp_2d.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/dp_2dm.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/dp_buy_stocks.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/dp_hd.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/dp_range.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/dp_rob.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/find_kth_largest.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/ip_address_op.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/jump_game.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/keChengBiao_tp.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/kuohao_match.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/list_op.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/lru_lfu.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/main.cpp">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/math_problem.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/sliding_window.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/sort_methods.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/stack_op.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/string_op.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/string_reverse.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/two_sum.h">
+			<Option target="datastruct_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/kai.chen/CLionProjects/datastruct_algorithm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
