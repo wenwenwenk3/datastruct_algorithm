@@ -57,7 +57,7 @@ int uniquePaths(int m, int n) {
 // 1.1 不同路径II 含障碍物
 int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
     int m = obstacleGrid.size(), n = obstacleGrid.at(0).size();
-    vector<vector<int>> dp(m, vector<int>(n));
+    vector<vector<int>> dp(m, vector<int>(n, 0));
     dp[0][0] = obstacleGrid[0][0] == 1 ? 0 : 1;
     // base case: dp[0][j] = 1, dp[i][0] = 1
     for (int i = 1; i < m; ++i) {
@@ -512,10 +512,10 @@ void serializeDFS(vector<vector<char>>& m, int i, int j, string& track, int dir)
     track.append(to_string(dir));
     track.push_back(',');
 
-    infect(m, i-1, j); // 上
-    infect(m, i+1, j); // 下
-    infect(m, i, j-1); // 左
-    infect(m, i, j+1); // 右
+    serializeDFS(m, i-1, j, track, 1); // 上
+    serializeDFS(m, i+1, j, track, 2); // 下
+    serializeDFS(m, i, j-1, track, 3); // 左
+    serializeDFS(m, i, j+1, track, 4); // 右
 
     track.append(to_string(-dir));
     track.push_back(',');
@@ -540,7 +540,13 @@ int numDistinctIslands(vector<vector<char>>& grid){
 
 #endif //DATASTRUCT_ALGORITHM_DP_2D_M_H
 /*
- * // 1.2 不同的路径III
+ * // 1.2 不同的路径III (hard)
+有四种类型方格：
+1 表示起始方格。且只有一个起始方格。
+2 表示结束方格，且只有一个结束方格。
+0 表示我们可以走过的空方格。
+-1 表示我们无法跨越的障碍。
+每一个无障碍方格都要通过一次，但是一条路径中不能重复通过同一个方格。
  * 回溯 ：O(m * n * 2^{m*n})其中m,n 是给定二维网格行与列的大小
 class Solution {
 public:

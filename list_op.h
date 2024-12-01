@@ -40,8 +40,42 @@ ListNode* reverseList(ListNode* head) {
     return prev;
 }
 
+ListNode *reverseBetween(ListNode *head, int left, int right) {
+    // 因为头节点有可能发生变化，使用虚拟头节点可以避免复杂的分类讨论
+    ListNode *dummyNode = new ListNode(-1);
+    dummyNode->next = head;
+
+    ListNode *prev = dummyNode;
+    // 第 1 步：从虚拟头节点走 left - 1 步，来到 left 节点的前一个节点
+    for (int i = 0; i < left - 1; i++) {
+        prev = prev->next;
+    }
+
+    // 第 2 步：从 pre 再走 right - left + 1 步，来到 right 节点
+    ListNode *rightNode = prev;
+    for (int i = 0; i < right - left + 1; i++) {
+        rightNode = rightNode->next;
+    }
+
+    // 第 3 步：切断出一个子链表（截取链表）
+    ListNode *leftNode = prev->next;
+    ListNode *curr = rightNode->next;
+
+    // 切断链接
+    prev->next = nullptr;
+    rightNode->next = nullptr;
+
+    // 第 4 步：反转链表的子区间
+    reverseList(leftNode);
+
+    // 第 5 步：接回到原来的链表中
+    prev->next = rightNode;
+    leftNode->next = curr;
+    return dummyNode->next;
+}
+
 // reverse List between [a, b)
-ListNode* reverseBetween(ListNode* a, ListNode*b){
+ListNode* reverseBetweenV2(ListNode* a, ListNode*b){
     ListNode* prev = nullptr, *cur = a;
     while(cur != b){
         ListNode* nxt = cur->next;
@@ -51,6 +85,7 @@ ListNode* reverseBetween(ListNode* a, ListNode*b){
     }
     return prev;
 }
+
 // k个一组翻转链表
 ListNode* myreverseKGroup(ListNode* head, int k){
     if(head == nullptr){
@@ -263,7 +298,7 @@ ListNode* reverseBetweenMN(ListNode* head, int m, int n){
     return head;
 }
 
-// 穿针引线 reverseBetweenMN
+// 穿针引线 reverseBetweenMN (头插法，一次遍历)
 ListNode* reverseBetween_ZHEN(ListNode* head, int left, int right){
     ListNode *dummyNode = new ListNode(0);
     dummyNode->next = head;

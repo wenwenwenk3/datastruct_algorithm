@@ -29,6 +29,36 @@ using namespace std;
 
 bool isPalindrome(list<int> head);
 
+ListNode *GetIntersectionNode(ListNode *headA, ListNode *headB) {
+    int lenA = 0, lenB = 0;
+    for(ListNode* p = headA; headA != nullptr; headA = headA->next){
+        lenA++;
+    }
+    for(ListNode* p = headB; headB != nullptr; headB = headB->next){
+        lenB++;
+    }
+    ListNode* pA = headA;
+    ListNode* pB = headB;
+    if(lenA > lenB){
+        int step = lenA - lenB;
+        while(step--){
+            pA = pA->next;
+        }
+        while(pA != nullptr) {
+            if(pA == pB) return pA;
+        }
+    }else{
+        int step = lenB - lenA;
+        while(step--){
+            pB = pB->next;
+        }
+        while(pA != nullptr) {
+            if(pA == pB) return pA;
+        }
+    }
+    return nullptr;
+}
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
    // testcanIWin();
